@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Muggle Extension",
+  "description": "This extension runs Python code, when you select a piece of code and right click on it.",
+  "version": "1.0",
+  "background":{
+    "scripts":[
+      "js/background.js"
+    ],
+    "pages":[
+      "popup.html"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "icons":{
+    "16":"icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "contextMenus",
+    "storage"
+  ]
+}
